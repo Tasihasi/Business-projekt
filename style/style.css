@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+  box-sizing: border-box ;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Open-Sans', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+h1 h2{
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p{
+  margin: 10px 0;
+}
+img{
+  width: 100%;
+}
+
+/* navbar */
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  opacity: 0.8;   /* Transparency */
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  transition: 0.5s;
+}
+.navbar.top{
+  background: transparent;
+}
+.navbar a{
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+.navbar a:hover{
+  border-bottom: solid #28a745;
+}
+.navbar ul{
+  display: flex;
+}
+.navbar logo{
+  font-weight: 400;
+}
+
+/* Header-------------------------------------------- */
+
+.hero{
+background: url('../home/showcase.jpg') no-repeat center center/cover;
+height: 100vh;
+position: relative;
+color: #fff;
+}
+.hero .content{                  /*I */
+  display: flex;                 /*I */
+  flex-direction: column;        /*I */
+  align-items: center;           /*I */    /* Positioning in the center of the screen */
+  justify-content: center;       /*I */
+  text-align: center;            /*I */
+  height: 100%;   /* Due to the fact that Beacuse the parent container is 100vh */
+  padding: 0 20px;/*All % are comapred to the parent element  */
+}    
+.hero .content h1{
+  font-size: 55px;
+}
+
+.hero .content p{
+  font-size: 33px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+.hero::before{
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0,0.4);
+  /* Making a owerlay to make darker the site */
+}
+
+.hero *{
+  z-index: 10;
+}
+.hero.blog{
+  background: url('../home/blog.jpg') no-repeat center center/cover;
+  height: 30vh;
+}
+
+/* Icons-------- */
+.icon{
+  padding: 30px;
+}
+
+.icon h3{
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.icons i{
+  background: #28a745;
+  color:#fff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin: 15px 0;
+}
+.cases img:hover{
+  opacity: 0.7;
+}
+
+.team img{
+  border-radius: 50%;
+}
+
+/* call back */
+.callback-form{
+  width: 100%;
+  padding: 20px 0;
+}
+.callback-form label{
+  display: block;
+  margin-bottom: 5px;
+}
+.callback-form .form-control{
+  margin-bottom: 15px;
+}
+.callback-form input{
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: solid #f5f5f5 1px;
+}
+.callback-form input:focus{
+  
+  outline: solid 1px#28a745 ;
+}
+.callback-form .btn{
+  padding: 12px 0;
+  margin-top: 20px;
+}
+/* Post */
+.post{
+  padding: 50px 30px;
+}
+.post h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: #333 2px solid;
+}
+.post .meta{
+  margin-bottom: 30px;
+}
+.post img{
+  width: 300px;
+  border-radius: 50%;
+  display: block ;
+  margin: 0 auto 30px;
+}
+/* Footer */
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 200px;
+}
+.footer a{
+  color: #fff;
+}
+footer a:hover{
+  color: #28a745 ;
+}
+.footer .social >*{
+  margin-right:30px ;
+}
+
+/* Blog  */
+.meta{
+  font-family: sans-serif;
+  padding: 5px;
+}
+.meta strong{
+  padding: 5px;
+}
+.meta i{
+  padding: 5px;
+}

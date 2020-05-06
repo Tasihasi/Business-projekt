@@ -1,0 +1,144 @@
+/* Tet decorations  */
+.text-primary{
+  color: #28a745;
+}
+.text-secondary{
+  color: #0284d8;
+}
+/* Button */
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px 30px;
+  color:#fff;
+  background: #28a745;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  opacity: 0.9;
+}
+.btn-primary,
+.bg-primary{
+  background: #28a745;
+  color: #fff;
+}
+.btn-secondery,
+.bg-secondary{
+  background: #0284d8;
+  color: #fff;
+}
+.btn-dark,
+.bg-dark{
+  background:#333;
+  color: #fff;
+}
+.btn-light,
+.bg-light{
+  background:#f4f4f4;
+  color: #333;
+}
+
+/* Flex items */
+.flex-items{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.flex-items > div{
+  padding: 20px;
+}
+
+/* Flex columns */
+.flex-columns.flex-reverse .row{
+  
+  flex-direction: row-reverse;
+}
+.flex-columns .column .column-1, .flex-columns .column .column-2 {
+  height: 100%;
+}
+.row{
+  display: flex;
+  flex-direction: row;    /* Default */
+  flex-wrap: wrap;
+  width: 100%;
+}
+.columns{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  
+
+}
+
+.columns-1{
+  height: 100%;
+}
+.columns-2{
+  height: 100%;
+}
+.flex-columns img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.flex-columns .columns-2{
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+  height: 100%;
+}
+.flex-columns h2{
+
+  font-size: 40px;
+  font-weight: 100;
+}
+.flex-columns h2{
+  margin-bottom: 10px;
+}
+.flex-columns p{
+  margin: 20px 0;
+}
+.btn-outline{
+  background: transparent;
+  border: 1px solid #fff;
+}
+/* Section Header */
+.section-header{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.section-header h2{
+  margin: 20px 0;
+  font-size: 40px;
+}
+.section-padding{
+  padding: 20px 20px 40px;
+}
+/* Flex Grid */
+.flex-grid .row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.flex-grid .column{
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.flex-columns .column .column-1, .flex-columns .column .column-2{
+  height: 100%;
+}
